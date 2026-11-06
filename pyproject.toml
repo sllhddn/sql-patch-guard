@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sql-patch-guard"
+version = "1.0.0"
+description = "Lint Oracle/PostgreSQL patch scripts for risky statements before they reach production"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Sallehuddin Mohd Zakinuddin" }]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+sql-patch-guard = "sqlpatchguard.cli:main"
+
+[tool.setuptools]
+packages = ["sqlpatchguard"]

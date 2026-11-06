@@ -1,0 +1,11 @@
+{
+  "application": {
+    "remarks": {"type": "varchar", "length": 4000},
+    "lot_no": {"type": "varchar", "length": 20}
+  },
+  "land_parcel": {
+    "area": {"type": "numeric", "precision": 16, "scale": 4},
+    "area_surveyed": {"type": "numeric", "precision": 16, "scale": 4},
+    "area_approved": {"type": "numeric", "precision": 16, "scale": 4}
+  }
+}
